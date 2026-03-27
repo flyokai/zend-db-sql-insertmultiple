@@ -1,6 +1,4 @@
-# flyokai/zend-db-sql-insertmultiple
-
-> User docs → [`README.md`](README.md) · Agent quick-ref → [`CLAUDE.md`](CLAUDE.md) · Agent deep dive → [`AGENTS.md`](AGENTS.md)
+# wtsergo/zend-db-sql-insertmultiple
 
 Multi-row INSERT SQL builder for Laminas DB.
 
