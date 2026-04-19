@@ -148,7 +148,7 @@ class InsertMultiple extends AbstractPreparableSql
         return (isset($key) && array_key_exists($key, $rawState)) ? $rawState[$key] : $rawState;
     }
 
-    protected function processInsert(PlatformInterface $platform, DriverInterface $driver = null, ParameterContainer $parameterContainer = null)
+    protected function processInsert(PlatformInterface $platform, ?DriverInterface $driver = null, ?ParameterContainer $parameterContainer = null)
     {
         if ($this->select) {
             return;
@@ -217,7 +217,7 @@ class InsertMultiple extends AbstractPreparableSql
         );
     }
 
-    protected function processSelect(PlatformInterface $platform, DriverInterface $driver = null, ParameterContainer $parameterContainer = null)
+    protected function processSelect(PlatformInterface $platform, ?DriverInterface $driver = null, ?ParameterContainer $parameterContainer = null)
     {
         if (!$this->select) {
             return;
